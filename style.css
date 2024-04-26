@@ -1,0 +1,927 @@
+
+/***************************************************
+GSAP Styles
+***************************************************/
+section.hero h1.flip-text{
+  opacity:0;
+  transform: translateY(20px);
+}
+
+section.skills .container .skill{
+  opacity:0;
+  transform: translateY(20px);
+}
+
+
+/***************************************************
+Base Styles
+***************************************************/
+:root {
+  --deepgrey: #1e2023;
+  --yellow: #f8cb74;
+  --aeonik: "aeonik regular";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--aeonik);
+}
+
+@font-face {
+  font-family: 'Aeonik Regular';
+  src: url('/assets/fonts/AeonikTRIAL-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik Light';
+  src: url('/assets/fonts/AeonikTRIAL-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik Bold';
+  src: url('/assets/fonts/AeonikTRIAL-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0 0 5px;
+}
+
+h1 {
+  font-family: var(--aeonik);
+  font-size: 11vw;
+  font-weight: 700;
+  color: #323232;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--aeonik);
+  font-size: 4.5em;
+  font-weight: 400;
+  color: #323232;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Aeonik Light";
+  font-size: 2.5em;
+  font-weight: 100;
+  color: #323232;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: "Aeonik Light";
+  font-size: 2em;
+  font-weight: 400;
+  color: #323232;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-family: var(--aeonik);
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #474747;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Aeonik Light";
+}
+
+a {
+  font-size: 0.8em;
+  font-family: var(--aeonik);
+  letter-spacing: 1px;
+}
+
+a.black-button {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+  border-radius: 50px;
+}
+
+a.black-button span {
+  color: white;
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+
+/* Button styles */
+button {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: #323232;
+  border-radius: 50px;
+  padding: 0;
+  font-family: var(--aeonik);
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+button.arrow-btn {
+  width: 220px;
+}
+
+button.arrow-btn .circle {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: #eeeeee;
+  border-radius: 50px;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.arrow-btn .circle .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #323232;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.arrow-btn .circle .icon.arrow {
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 1.5px;
+  background: none;
+}
+
+button.arrow-btn .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 1.5px solid #323232;
+  border-right: 1.5px solid #323232;
+  transform: rotate(45deg);
+}
+
+button.arrow-btn .button-text {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin-left: 28px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: black;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #323232;
+}
+
+
+
+/***************************************************
+Navigation
+***************************************************/
+
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: rgb(149 157 165 / 8%) 0px 8px 16px;
+  position: fixed;
+  z-index: 9999;
+}
+
+nav ul li {
+  margin-left: 35px;
+  margin-right: 35px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #323232;
+  text-decoration: none;
+  transition: .25s ease;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+nav ul:hover a {
+  color: #CCC;
+  transition: 0.3s ease;
+}
+
+nav ul:hover a:hover {
+  color: #323232;
+  box-shadow: 0 1px 0 0 currentcolor;
+  transition: 0.3s ease;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 998;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content ul{
+  list-style-type: none;
+}
+
+.overlay a {
+  font-family: var(--aeonik);
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4em;
+  color: #323232;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #d1d0d0;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 999;
+}
+
+button.burgermenu {
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: end;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  box-shadow: rgb(149 157 165 / 8%) 0px 8px 16px;
+  top:0;
+  right:0;
+  padding-right: 5%;
+  border-radius: 0;
+
+  transition: opacity 0.3s ease; 
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 3;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 3;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 3;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 3;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+
+.spinning-text {
+  top: 12px;
+  left: 5%;
+  position: absolute;
+}
+
+.spinning-text p {
+  height: 100px;
+  font-size: 0.45em;
+  width: 100px;
+  position: relative;
+  animation: effect 16s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-text span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 50px;
+}
+
+/***************************************************
+Hero
+***************************************************/
+section.hero {
+  padding: 180px 8% 100px;
+  text-align: center;
+}
+
+section.hero .mobile-hero{
+  display: none;
+}
+
+section.hero .mobile-hero h1:first-child{
+  margin-bottom: 0;
+}
+section.hero .mobile-hero h1{
+font-size: 17vw;
+}
+
+section.hero h1{
+  margin-bottom: 40px;
+}
+
+section.hero .letter {
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition-duration: 1.2s;
+  transition-property: color, transform;
+  transition-timing-function: cubic-bezier(.76,0,.24,1);
+}
+
+section.hero .letter.animating {
+  color: transparent;
+  transform: rotateY(-180deg);
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  color: #eeeeee;
+}
+
+/***************************************************
+Work
+***************************************************/
+section.work {
+  padding: 100px 8%;
+  height: 800px;
+  position: relative;
+  background-color: #eeeeee;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+section.work p{
+color: #989898;
+}
+
+section.work .scroll-container {
+  margin-top:70px;
+  position: relative;
+  width: 100%;
+  max-height: 400px; 
+}
+
+section.work .scroll-container .carousel {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  animation: scroll-horizontal 50s linear infinite;
+  transition: opacity 0.3s ease;
+}
+
+section.work .scroll-container .carousel .card {
+  width: 500px; 
+  margin-left: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #323232;
+  position: relative;
+}
+
+section.work .scroll-container .carousel .card .text{
+  padding: 30px;
+}
+
+section.work .scroll-container .carousel .card img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section.work .scroll-container .carousel .card .overlay{
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 400px;
+  z-index: 999;
+  top:0;
+  left:0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .25), transparent 75%);
+}
+
+section.work .scroll-container:hover > .carousel:not(:hover) {
+  animation-play-state: paused;
+}
+
+section.work .scroll-container .carousel:hover {
+  animation-play-state: paused;
+  opacity: 1; 
+}
+
+section.work .scroll-container .carousel .card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section.work .scroll-container .carousel:hover .card:not(:hover) {
+  opacity: 0.5;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+
+/***************************************************
+Experience
+***************************************************/
+section.experience {
+  padding: 0 25px;
+  background-color: #eeeeee;
+}
+
+section.experience .box{
+  background-color: white;
+  border-radius: 50px;
+  padding: 70px 8%;
+}
+
+section.experience .wrapper{
+  padding: 30px 0;
+}
+
+section.experience .wrapper .item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+section.experience .wrapper .item:last-child{
+  border-bottom: 1px solid #eeeeee;
+}
+
+section.experience .wrapper .item p{
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: #b3b3b3;
+}
+
+/***************************************************
+Skills
+***************************************************/
+
+section.skills{
+  padding: 70px 8%;
+  background-color: #eeeeee;
+}
+
+section.skills h2{
+  margin-bottom: 30px;
+}
+
+section.skills .container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  max-width: 100%;
+  margin: auto;
+}
+
+section.skills .container .bento{
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+section.skills .container .bento::before {
+  content: '';
+  display: block;
+  padding-bottom: 50%;
+}
+
+section.skills .container .bento.resume::before{
+  padding-bottom: 0;
+}
+
+section.skills .container .bento.skill{
+  display: flex;
+align-items: center;
+justify-content: center;
+background-color: #fff9;
+}
+
+section.skills .container .skill:nth-child(1){
+  background-color: #e3e1e1;
+}
+section.skills .container .skill:nth-child(3){
+  background-color: #d7d4d4;
+}
+section.skills .container .skill:nth-child(4){
+  background-color: #dfdfdf;
+}
+section.skills .container .skill:nth-child(5){
+  background-color: #d3d3d3;
+}
+section.skills .container .skill:nth-child(6){
+  background-color: #e1e1e1;
+}
+
+section.skills .container .bento.skill svg{
+  fill: #b0aeae;
+ width: 130px;
+  padding: 20px;
+}
+
+section.skills .container .bento.resume{
+  background-color: #fff;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  section.skills .container .bento.resume:hover button .circle {
+    width: 100%;
+  }
+  
+  section.skills .container .bento.resume:hover button .circle .icon.arrow {
+    background: black;
+    transform: translate(1rem, 0);
+  }
+  
+  section.skills .container .bento.resume:hover button .button-text {
+    color: #323232;
+  }
+
+section.skills .container .resume p{
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: "Aeonik Light";
+margin-bottom: 30px;
+    color: #b3b3b3;
+    max-width: 600px;
+}
+
+section.skills .container .bento-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffc2; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 25px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.skills .container .bento:hover .bento-overlay {
+  opacity: 1;
+}
+
+section.skills .container .bento-overlay p {
+  text-align: center;
+  color: #989898;
+  font-size: 1.2em;
+  padding: 0 8%;
+}
+
+section.skills .paper-airplane{
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+section.skills .airplane{
+  position: absolute;
+  width:100px;
+ right:5%;
+ top: -35px;
+  animation: up 2s ease-in-out infinite alternate, rotate 4s ease-out infinite;
+}
+
+section.skills .cls-1, .cls-2 {
+  fill: #fff;
+}
+
+section.skills .cls-1 {
+  stroke: #323232;
+}
+
+@keyframes moving{
+  to{
+    background-position: -110% 0;
+  }
+}
+@keyframes up{
+  to{
+    margin-top:-50px;
+  }
+}
+@keyframes rotate{
+  50%{
+    transform: rotate(-10deg);
+  }
+  75%{
+    transform: rotate(10deg);
+  }
+}
+
+/***************************************************
+Contact
+***************************************************/
+section.contact{
+  padding: 70px 8% 100px;
+  background-color: #323232;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+section.contact h2{
+  color: white;
+  font-family: "Aeonik Light";
+  margin-bottom: 30px;
+}
+
+section.contact h2 span{
+  color: #ababab;
+}
+
+section.contact .wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 900px;
+  
+}
+
+section.contact .item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+section.contact .item p{
+  font-size: 1.4em;
+  color: white;
+}
+
+section.contact .item img{
+  height: 30px;
+  margin-right: 30px;
+}
+
+section.contact .item h4{
+  color: white;
+  text-transform: lowercase;
+}
+
+section.contact .rhs h5{
+  font-size: 1.6em;
+  font-family: "Aeonik Light";
+  color: white;
+  margin-bottom: 10px;
+}
+
+section.contact .rhs ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section.contact .rhs ul li {
+margin: 8px 0;
+}
+
+section.contact .rhs ul li a{
+  color: #ababab;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Aeonik Light";
+  transition: 0.3s ease;
+}
+
+section.contact .rhs ul:hover a {
+  color: #939393;
+  transition: 0.3s ease;
+}
+
+section.contact .rhs ul:hover a:hover {
+  color: #fff;
+  box-shadow: 0 1px 0 0 currentcolor;
+  transition: 0.3s ease;
+}
+
+
+
+/***************************************************
+Media Queries
+***************************************************/
+
+@media screen and (max-width:1024px) {
+  nav{
+    display: none;
+  }
+  nav .spinning-text{
+    display: none;
+  }
+button.burgermenu {
+  display: flex;
+}
+}
+
+@media screen and (max-width:960px) {
+  section.hero {
+    padding: 140px 8% 60px;
+  }
+section.hero .mobile-hero{
+  display: block;
+}
+section.hero .desktop-hero{
+  display: none;
+}
+section.skills .container {
+  grid-template-columns: 1fr 1fr;
+}
+section.skills .container .bento.resume {
+  grid-column: 2;
+  grid-row: 3;
+}
+section.skills .airplane {
+  display: none;
+}
+}
+
+@media screen and (max-width:840px) {
+section.experience .wrapper .item {
+  flex-direction: column;
+  align-items: start;
+}
+}
+
+@media screen and (max-width:760px) {
+  section.contact .wrapper{
+    flex-direction: column;
+  }
+section.contact .wrapper .rhs{
+  margin-top: 50px;
+}
+}
+
+
+@media screen and (max-width:740px) {
+section.skills {
+  padding: 70px 5%;
+}
+section.work {
+  padding: 100px 5%;
+}
+section.experience .box {
+  padding: 70px 5%;
+}
+section.contact {
+  padding: 70px 5% 100px;
+}
+section.skills .container {
+  grid-template-columns: 1fr;
+}
+section.skills .container .bento.resume {
+  grid-area: 1;
+}
+}
+
+
+
+
+
+

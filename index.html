@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uaj3alp.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <button class="burgermenu"
+    onclick="this.classList.toggle('opened'); this.setAttribute('aria-expanded', this.classList.contains('opened')); toggleNav();"
+    aria-label="Main Menu">
+    <svg width="50" height="50" viewBox="0 0 100 100">
+      <path class="line line1"
+        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+      <path class="line line2" d="M 20,50 H 80" />
+      <path class="line line3"
+        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+    </svg>
+  </button>
+
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById("myNav");
+      if (nav.style.height === "100%") {
+        nav.style.height = "0%";
+      } else {
+        nav.style.height = "100%";
+      }
+    }
+  </script>
+
+  <nav>
+    <div class="spinning-text">
+      <p id="text"></p>
+    </div>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero">
+    <h1 class="flip-text desktop-hero">sophie graham</h1>
+    <div class="mobile-hero">
+      <h1 class="flip-text">sophie</h1>
+      <h1 class="flip-text">graham</h1>
+    </div>
+    <button class="arrow-btn" href="#contact">
+      <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">get in touch</span>
+    </button>
+
+  </section>
+
+  <section class="work" id="work">
+    <h2>selected work.</h2>
+    <P>Drag the slider to view some of my recent websites</P>
+    <div class="scroll-container">
+      <div class="carousel">
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/fusion.png" alt="">
+          <div class="text">
+            <h4>fusion interiors</h4>
+            <p>Developed / UX</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/credit.png" alt="">
+          <div class="text">
+            <h4>Credit Union Foundation</h4>
+            <p>Developed / UX</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/bray.png" alt="">
+          <div class="text">
+            <h4>Bray Interiors</h4>
+            <p>Co-Developed / UX</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/ga.png" alt="">
+          <div class="text">
+            <h4>GA Valves</h4>
+            <p>Developed</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/proguard.png" alt="">
+          <div class="text">
+            <h4>ProGuard 365</h4>
+            <p>Co-Developed</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/whiteroc.png" alt="">
+          <div class="text">
+            <h4>Whiteroc Warehouse</h4>
+            <p>Developed / UX</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/htf.png" alt="">
+          <div class="text">
+            <h4>HTF Skills Academy</h4>
+            <p>Developed / UX</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlay"></div>
+          <img src="/assets/images/clarence.png" alt="">
+          <div class="text">
+            <h4>Clarence Recruitment</h4>
+            <p>Developed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="box">
+      <h2>experience.</h2>
+      <div class="wrapper">
+        <div class="item">
+          <div class="lhs">
+            <h4>web developer</h4>
+            <p>unbranded digital</p>
+          </div>
+          <div class="rhs">
+            <p>august 2023 - present</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="lhs">
+            <h4>computer science msc</h4>
+            <p>northumbria university, newcastle</p>
+          </div>
+          <div class="rhs">
+            <p>september 2021 - 2023</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="lhs">
+            <h4>mechanical engineering beng</h4>
+            <p>newcastle univeristy, newcastle</p>
+          </div>
+          <div class="rhs">
+            <p>september 2018 - 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>skills.</h2>
+
+    <div class="container">
+
+      <div class="bento skill">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+          <path fill-rule="evenodd"
+            d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z">
+          </path>
+        </svg>
+        <div class="bento-overlay">
+          <h5>CSS</h5>
+          <p>I utilise a combination of design principles and user experience best practices to achieve visually
+            polished and precisely aligned designs</p>
+        </div>
+      </div>
+
+      <div class="bento resume">
+        <div class="paper-airplane">
+          <svg class="airplane" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="301.18" height="99.44"
+            viewBox="0 0 301.18 99.44">
+            <g>
+              <polyline class="cls-1" points="296.18 13.18 1.27 0.56 25.2 24.35" />
+              <g>
+                <polygon class="cls-2" points="24.76 23.82 296.61 12.82 34.29 98.78 24.76 23.82" />
+                <path
+                  d="M1166.08,987.66,907.75,1072.3l-9.38-73.81,267.71-10.83m7.14-1.29-276,11.17,9.67,76.09,266.31-87.26Z"
+                  transform="translate(-873.05 -974.19)" />
+              </g>
+              <g>
+                <polygon class="cls-2" points="41.11 38.61 295.66 13.13 34.45 98.72 41.11 38.61" />
+                <path d="M1164.18,988.28l-256.1,83.92,6.52-58.94,249.58-25m9-1.91-259.52,26-6.79,61.28,266.31-87.26Z"
+                  transform="translate(-873.05 -974.19)" />
+              </g>
+              <g>
+                <polygon class="cls-2" points="41.76 38.55 297.93 13 99.94 96.46 41.76 38.55" />
+                <path d="M1167.73,988l-194.63,82-57.2-56.93L1167.73,988m6.49-1.65-260.52,26,59.17,58.89,201.35-84.87Z"
+                  transform="translate(-873.05 -974.19)" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <h3>Resume</h3>
+        <p>See more on my skills, work history and achievements in my resume</p>
+        <button class="arrow-btn">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">view</span>
+        </button>
+      </div>
+
+      <div class="bento skill">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+          <path
+            d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z">
+          </path>
+        </svg>
+        <div class="bento-overlay">
+          <h5>JavaScript</h5>
+          <p>I bring websites to life with Javascript, incorporating sleek interactive features and optimising
+            performance with efficient code</p>
+        </div>
+      </div>
+      <div class="bento skill">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+          <path
+            d="M25 2v14h-7c-3.855 0-7-3.145-7-7 0-3.855 3.145-7 7-7H25zM25 18v14h-7c-3.855 0-7-3.145-7-7 0-3.855 3.145-7 7-7H25zM25 34v7c0 3.855-3.145 7-7 7s-7-3.145-7-7c0-3.855 3.145-7 7-7H25zM41 9c0 3.855-3.145 7-7 7h-7V2h7C37.855 2 41 5.145 41 9zM34 18A7 7 0 1034 32 7 7 0 1034 18z">
+          </path>
+        </svg>
+        <div class="bento-overlay">
+          <h5>Figma</h5>
+          <p>Whilst UI design is not my primary skill, I have a knack for aesthetics and crafting visually appealing
+            user friendly interfaces</p>
+        </div>
+      </div>
+      <div class="bento skill">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+          <path
+            d="M43.03,27.802c-1.747,0.009-3.261,0.429-4.53,1.054c-0.464-0.926-0.934-1.741-1.013-2.347 c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125c-0.007-0.089-0.109-0.518-1.117-0.526 c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.296,0.865-0.416,1.49c-0.177,0.914-2.012,4.174-3.055,5.879 c-0.341-0.666-0.631-1.252-0.691-1.716c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125 c-0.007-0.089-0.109-0.518-1.117-0.526c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.21,0.888-0.416,1.49 c-0.207,0.602-2.647,6.039-3.286,7.448c-0.326,0.718-0.609,1.295-0.809,1.689c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.012,0.026-0.034,0.071c-0.171,0.335-0.273,0.521-0.273,0.521s0.001,0.003,0.003,0.007c-0.136,0.246-0.281,0.475-0.353,0.475 c-0.05,0-0.151-0.656,0.022-1.555c0.363-1.886,1.235-4.828,1.227-4.929c-0.004-0.052,0.162-0.564-0.57-0.833 c-0.711-0.26-0.965,0.174-1.03,0.175c-0.063,0.001-0.11,0.153-0.11,0.153s0.793-3.308-1.512-3.308c-1.44,0-3.436,1.576-4.42,3.004 c-0.62,0.338-1.948,1.063-3.357,1.837c-0.541,0.297-1.093,0.601-1.617,0.89c-0.036-0.039-0.071-0.079-0.108-0.118 c-2.794-2.981-7.958-5.089-7.739-9.096c0.08-1.457,0.586-5.293,9.924-9.946c7.649-3.812,13.773-2.763,14.831-0.438 c1.512,3.321-3.273,9.494-11.216,10.384c-3.027,0.339-4.62-0.834-5.017-1.271c-0.417-0.46-0.479-0.481-0.635-0.394 c-0.254,0.141-0.093,0.547,0,0.789c0.237,0.617,1.21,1.712,2.87,2.256c1.46,0.479,5.013,0.742,9.311-0.92 c4.813-1.862,8.571-7.041,7.468-11.37c-1.123-4.403-8.423-5.85-15.332-3.396c-4.112,1.461-8.563,3.754-11.764,6.747 c-3.806,3.56-4.412,6.658-4.162,7.952c0.889,4.6,7.228,7.595,9.767,9.815c-0.125,0.069-0.243,0.134-0.35,0.193 c-1.273,0.63-6.105,3.159-7.314,5.831c-1.371,3.031,0.218,5.206,1.271,5.499c3.26,0.907,6.606-0.725,8.404-3.407 c1.798-2.681,1.578-6.172,0.753-7.766c-0.01-0.02-0.022-0.039-0.032-0.059c0.329-0.195,0.664-0.392,0.996-0.587 c0.648-0.38,1.284-0.735,1.836-1.036c-0.309,0.846-0.535,1.86-0.653,3.325c-0.138,1.721,0.567,3.945,1.49,4.82 c0.406,0.385,0.895,0.394,1.205,0.394c1.074,0,1.564-0.893,2.103-1.95c0.662-1.296,1.249-2.804,1.249-2.804 s-0.737,4.075,1.271,4.075c0.731,0,1.467-0.949,1.795-1.432c0.001,0.005,0.001,0.008,0.001,0.008s0.019-0.031,0.056-0.095 c0.076-0.116,0.119-0.19,0.119-0.19s0.002-0.008,0.004-0.021c0.294-0.51,0.946-1.674,1.924-3.594 c1.263-2.48,2.475-5.586,2.475-5.586s0.113,0.76,0.482,2.015c0.217,0.739,0.679,1.556,1.043,2.339 c-0.293,0.407-0.473,0.64-0.473,0.64s0.002,0.004,0.005,0.012c-0.234,0.311-0.497,0.646-0.772,0.974 c-0.997,1.188-2.185,2.544-2.344,2.936c-0.187,0.461-0.143,0.801,0.219,1.073c0.264,0.199,0.735,0.23,1.227,0.197 c0.896-0.06,1.527-0.283,1.838-0.418c0.485-0.171,1.05-0.441,1.58-0.831c0.978-0.719,1.568-1.748,1.512-3.111 c-0.031-0.751-0.271-1.495-0.574-2.198c0.089-0.128,0.178-0.256,0.267-0.387c1.542-2.255,2.738-4.732,2.738-4.732 s0.113,0.76,0.482,2.015c0.187,0.636,0.556,1.329,0.887,2.009c-1.45,1.178-2.349,2.547-2.662,3.445 c-0.577,1.661-0.125,2.414,0.723,2.585c0.384,0.078,0.927-0.098,1.335-0.271c0.508-0.168,1.118-0.449,1.688-0.868 c0.978-0.719,1.919-1.726,1.862-3.089c-0.026-0.62-0.194-1.236-0.422-1.828c1.229-0.512,2.821-0.797,4.848-0.56 c4.349,0.508,5.202,3.223,5.039,4.359c-0.163,1.137-1.075,1.761-1.38,1.95c-0.305,0.189-0.398,0.254-0.372,0.394 c0.037,0.204,0.178,0.196,0.438,0.152c0.358-0.06,2.283-0.924,2.366-3.022C50.102,30.703,47.55,27.778,43.03,27.802z M9.512,39.102 c-1.44,1.571-3.453,2.165-4.316,1.665c-0.932-0.54-0.563-2.854,1.205-4.521c1.077-1.016,2.468-1.952,3.391-2.529 c0.21-0.126,0.518-0.312,0.893-0.537c0.062-0.035,0.097-0.055,0.097-0.055l-0.001-0.002c0.072-0.043,0.147-0.088,0.223-0.134 C11.647,35.363,11.024,37.453,9.512,39.102z M20.005,31.968c-0.502,1.223-1.552,4.352-2.191,4.184 c-0.549-0.144-0.883-2.523-0.11-4.863c0.389-1.178,1.22-2.586,1.709-3.133c0.786-0.879,1.652-1.167,1.862-0.81 C21.544,27.8,20.32,31.201,20.005,31.968z M28.675,36.105c-0.213,0.111-0.408,0.181-0.498,0.127 c-0.067-0.04,0.088-0.186,0.088-0.186s1.084-1.167,1.512-1.698c0.248-0.309,0.537-0.676,0.85-1.086 c0.003,0.041,0.004,0.082,0.004,0.122C30.627,34.782,29.277,35.725,28.675,36.105z M35.354,34.582 c-0.159-0.113-0.132-0.478,0.389-1.614c0.205-0.446,0.672-1.198,1.485-1.916c0.094,0.295,0.152,0.578,0.15,0.842 C37.367,33.653,36.112,34.31,35.354,34.582z">
+          </path>
+        </svg>
+        <div class="bento-overlay">
+          <h5>Sass</h5>
+          <p>I leverage Sass to write cleaner code, streamline the development process, and ease the maintenance and
+            scalability of projects</p>
+        </div>
+      </div>
+      <div class="bento skill">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+          <path
+            d="M 25 12 C 11.542969 12 1 17.710938 1 25 C 1 32.289063 11.542969 38 25 38 C 38.457031 38 49 32.289063 49 25 C 49 17.710938 38.457031 12 25 12 Z M 22.507813 16 L 25.128906 16 L 24.296875 20 L 26.636719 20 C 28.121094 20 29.117188 20.207031 29.683594 20.726563 C 30.238281 21.238281 30.40625 22.078125 30.183594 23.222656 L 29.144531 28 L 26.480469 28 L 27.4375 23.582031 C 27.554688 22.976563 27.507813 22.554688 27.304688 22.332031 C 27.101563 22.109375 26.65625 22 25.988281 22 L 23.890625 22 L 22.625 28 L 20 28 Z M 11 20 L 16.332031 20 C 18.875 20 20.414063 21.703125 19.8125 24.246094 C 19.113281 27.199219 17.238281 28 13.792969 28 L 12.144531 28 L 11.621094 31 L 8.972656 31 Z M 32 20 L 37.332031 20 C 39.875 20 41.414063 21.703125 40.8125 24.246094 C 40.113281 27.199219 38.238281 28 34.792969 28 L 33.144531 28 L 32.621094 31 L 29.972656 31 Z M 13.269531 22 L 12.515625 26 L 14.226563 26 C 15.707031 26 17.082031 25.832031 17.3125 23.625 C 17.398438 22.769531 17.042969 22 15.332031 22 Z M 34.269531 22 L 33.515625 26 L 35.226563 26 C 36.707031 26 38.082031 25.832031 38.3125 23.625 C 38.398438 22.769531 38.042969 22 36.332031 22 Z">
+          </path>
+        </svg>
+        <div class="bento-overlay">
+          <h5>PHP</h5>
+          <p>I create bespoke WordPress themes, tailored to the specific design and functionality requirements of each
+            client</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2><span>let's</span> connect.</h2>
+    <div class="wrapper">
+      <div class="lhs">
+        <div class="item">
+          <img src="/assets/images/iphone.png" alt="">
+          <p>+447 835 852 876</p>
+        </div>
+        <div class="item">
+          <img src="/assets/images/mail.png" alt="">
+          <p>sophiegraham@btinternet.com</p>
+        </div>
+      </div>
+      <div class="rhs">
+        <h5>navigation</h5>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/animations.js"></script>
+</body>
+
+</html>
