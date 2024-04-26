@@ -2,7 +2,7 @@
 /***************************************************
 GSAP Styles
 ***************************************************/
-section.hero h1.flip-text{
+/* section.hero h1.flip-text{
   opacity:0;
   transform: translateY(20px);
 }
@@ -10,7 +10,7 @@ section.hero h1.flip-text{
 section.skills .container .skill{
   opacity:0;
   transform: translateY(20px);
-}
+} */
 
 
 /***************************************************

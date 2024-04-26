@@ -43,9 +43,6 @@ GSAP Animations
         }
     })
 
-    
-
-    
     console.log("window loaded");
 }, false);
 
