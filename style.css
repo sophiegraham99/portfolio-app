@@ -145,6 +145,9 @@ button {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
+.button-wrapper{
+font-size: 1em;
+}
 
 button.arrow-btn {
   width: 220px;
