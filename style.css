@@ -35,21 +35,21 @@ body {
 
 @font-face {
   font-family: 'Aeonik Regular';
-  src: url('../assets/fonts/AeonikTRIAL-Regular.otf') format('opentype');
+  src: url('assets/fonts/AeonikTRIAL-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Aeonik Light';
-  src: url('../assets/fonts/AeonikTRIAL-Light.otf') format('opentype');
+  src: url('assets/fonts/AeonikTRIAL-Light.otf') format('opentype');
   font-weight: light;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Aeonik Bold';
-  src: url('../assets/fonts/AeonikTRIAL-Bold.otf') format('opentype');
+  src: url('assets/fonts/AeonikTRIAL-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
