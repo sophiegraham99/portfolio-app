@@ -631,6 +631,7 @@ section.skills .container .bento.skill{
 align-items: center;
 justify-content: center;
 background-color: #fff9;
+position: relative;
 }
 
 section.skills .container .skill:nth-child(1){
