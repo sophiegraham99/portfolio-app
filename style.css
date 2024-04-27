@@ -427,7 +427,7 @@ section.hero .mobile-hero h1:first-child{
   margin-bottom: 0;
 }
 section.hero .mobile-hero h1{
-font-size: 17vw;
+font-size: 20vw;
 }
 
 section.hero h1{
@@ -920,7 +920,7 @@ section.work .drag-arrow {
 
 @media screen and (max-width:960px) {
   section.hero {
-    padding: 140px 8% 60px;
+    padding: 170px 8% 100px;
   }
 section.hero .mobile-hero{
   display: block;
@@ -971,7 +971,10 @@ section.work {
   padding: 100px 5%;
 }
 section.experience .box {
-  padding: 70px 5%;
+  padding: 50px 8% 30px;
+}
+section.experience .wrapper {
+  padding: 10px 0;
 }
 section.contact {
   padding: 70px 5% 100px;
@@ -995,7 +998,7 @@ section.work.mobile{
 }
 
 section.work.mobile .scroll-container {
-  margin-top:70px;
+  margin-top: 10px;
   position: unset;
   width: 100%;
   max-height: none; 
