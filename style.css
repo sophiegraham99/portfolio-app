@@ -1021,6 +1021,9 @@ section.work.mobile .scroll-container .carousel .card:hover,
 section.work.mobile .scroll-container .carousel:hover .card:not(:hover) {
   opacity: 1; 
 }
+section.experience .box {
+  border-radius: 25px;
+}
 }
 
 @media screen and (max-width:465px) {
