@@ -920,7 +920,7 @@ section.work .drag-arrow {
 
 @media screen and (max-width:960px) {
   section.hero {
-    padding: 170px 8% 100px;
+    padding: 200px 8% 160px;
   }
 section.hero .mobile-hero{
   display: block;
