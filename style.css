@@ -479,7 +479,6 @@ section.work .drag-circle{
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 999;
   left: 780px;
   top: 107px;
 }
@@ -490,7 +489,6 @@ section.work .drag-circle p{
 
 section.work .drag-arrow{
   position: absolute;
-  z-index: 999;
   left: 860px;
   top:160px;
   width: 60px;
