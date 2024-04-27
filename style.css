@@ -982,7 +982,7 @@ section.skills .container .bento.resume {
 }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:465px) {
 h2 {
   font-size: 3.3em;
 }
