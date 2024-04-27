@@ -503,7 +503,8 @@ section.work .drag-circle p{
 section.work .scroll-container {
   margin-top:70px;
   position: relative;
-  width: 100%;
+  width: 100vw;
+
   max-height: 400px; 
   cursor: grab;
 }
@@ -511,7 +512,7 @@ section.work .scroll-container {
 section.work .scroll-container .carousel {
   display: flex;
   justify-content: space-around;
-  overflow: hidden;
+
   position: absolute;
   white-space: nowrap;
   animation: scroll-horizontal 50s linear infinite;
@@ -978,6 +979,20 @@ section.skills .container {
 }
 section.skills .container .bento.resume {
   grid-area: 1;
+}
+}
+
+@media screen and (max-width:400px) {
+h2 {
+  font-size: 3.3em;
+}
+h4 {
+  font-size: 1.5em;
+}
+section.experience .wrapper .item p,
+section.skills .container .resume p,
+section.contact .item a {
+  font-size: 1em;
 }
 }
 
