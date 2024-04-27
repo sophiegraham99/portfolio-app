@@ -64,23 +64,18 @@ document.querySelectorAll('.flip-text').forEach(flipText => {
 /***************************************************
 Work Cards Slider
 ***************************************************/
-const carousel = document.querySelector('.carousel');
-const cards = document.querySelectorAll('.card');
-const cardWidth = 500;
+const workSection = document.querySelector('.work');
+const carousel = workSection.querySelector('.carousel');
+const cards = workSection.querySelectorAll('.card');
 
-cards.forEach((card) => {
-  const clone = card.cloneNode(true);
-  carousel.appendChild(clone);
-});
-
-cards.forEach((card) => {
+// Check if the work section has the "mobile" class
+if (!workSection.classList.contains('mobile')) {
+  // Clone cards if the section is not for mobile
+  cards.forEach((card) => {
     const clone = card.cloneNode(true);
     carousel.appendChild(clone);
   });
-cards.forEach((card) => {
-    const clone = card.cloneNode(true);
-    carousel.appendChild(clone);
-  });
+}
 
 let isDragging = false;
 let startPosition = 0;
@@ -122,6 +117,7 @@ carousel.addEventListener('mouseleave', () => {
     carousel.querySelectorAll('img').forEach(img => img.style.pointerEvents = 'auto');
   }
 });
+
 const sensitivity = 1.7; // Adjust this value to increase or decrease dragging power
 
 carousel.addEventListener('mousemove', (e) => {
@@ -132,11 +128,10 @@ carousel.addEventListener('mousemove', (e) => {
   }
 });
 
-
-
 function animate() {
   carousel.style.transform = `translateX(${currentTranslate}px)`;
   animationID = requestAnimationFrame(animate);
 }
 
 animate();
+

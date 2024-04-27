@@ -453,6 +453,10 @@ section.hero .letter.animating {
 /***************************************************
 Work
 ***************************************************/
+section.work.mobile{
+display: none;
+}
+
 section.work {
   padding: 100px 8%;
   height: 800px;
@@ -504,7 +508,6 @@ section.work .scroll-container {
   margin-top:70px;
   position: relative;
   width: 100vw;
-
   max-height: 400px; 
   cursor: grab;
 }
@@ -512,7 +515,6 @@ section.work .scroll-container {
 section.work .scroll-container .carousel {
   display: flex;
   justify-content: space-around;
-
   position: absolute;
   white-space: nowrap;
   animation: scroll-horizontal 50s linear infinite;
@@ -979,6 +981,39 @@ section.skills .container {
 }
 section.skills .container .bento.resume {
   grid-area: 1;
+}
+
+section.work {
+  display: none;
+}
+
+section.work.mobile{
+  display: block;
+  position: unset;
+  height: unset;
+  padding: 70px 5%;
+}
+
+section.work.mobile .scroll-container {
+  margin-top:70px;
+  position: unset;
+  width: 100%;
+  max-height: none; 
+  cursor: grab;
+}
+
+section.work.mobile .scroll-container .carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: unset;
+  white-space: nowrap;
+}
+
+section.work.mobile .scroll-container .carousel .card{
+    margin-left: 0;
+    margin: 20px auto;
 }
 }
 
