@@ -289,7 +289,7 @@ nav ul:hover a:hover {
 
 .overlay-content {
   position: relative;
-  top: 12%;
+  top: 15%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -1014,6 +1014,12 @@ section.work.mobile .scroll-container .carousel {
 section.work.mobile .scroll-container .carousel .card{
     margin-left: 0;
     margin: 20px auto;
+}
+
+section.work.mobile .scroll-container .carousel:hover,
+section.work.mobile .scroll-container .carousel .card:hover,
+section.work.mobile .scroll-container .carousel:hover .card:not(:hover) {
+  opacity: 1; 
 }
 }
 
