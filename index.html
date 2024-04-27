@@ -35,14 +35,21 @@
   </div>
 
   <script>
-    function toggleNav() {
-      var nav = document.getElementById("myNav");
-      if (nav.style.height === "100%") {
-        nav.style.height = "0%";
-      } else {
-        nav.style.height = "100%";
-      }
-    }
+function toggleNav() {
+  var nav = document.getElementById("myNav");
+  if (nav.style.height === "100%") {
+    nav.style.height = "0%";
+  } else {
+    nav.style.height = "100%";
+  }
+}
+
+document.querySelectorAll('.overlay-content a').forEach(item => {
+  item.addEventListener('click', event => {
+    toggleNav(); 
+  });
+});
+
   </script>
 
   <nav>
