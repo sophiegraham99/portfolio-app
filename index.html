@@ -37,10 +37,13 @@
   <script>
 function toggleNav() {
   var nav = document.getElementById("myNav");
+  var burgerMenu = document.querySelector(".burgermenu");
   if (nav.style.height === "100%") {
     nav.style.height = "0%";
+    burgerMenu.classList.remove('opened'); 
   } else {
     nav.style.height = "100%";
+    burgerMenu.classList.add('opened'); 
   }
 }
 
