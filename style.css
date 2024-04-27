@@ -460,10 +460,44 @@ section.work {
   background-color: #eeeeee;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  position: relative;
 }
 
 section.work p{
 color: #989898;
+}
+
+section.work .drag-circle{
+  background-color: #323232;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  left: 780px;
+  top: 107px;
+}
+
+section.work .drag-circle p{
+  font-size: 0.75em;
+}
+
+section.work .drag-arrow{
+  position: absolute;
+  z-index: 999;
+  left: 860px;
+  top:160px;
+  width: 60px;
+}
+
+section.work .drag-circle p{
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 section.work .scroll-container {
@@ -471,6 +505,7 @@ section.work .scroll-container {
   position: relative;
   width: 100%;
   max-height: 400px; 
+  cursor: grab;
 }
 
 section.work .scroll-container .carousel {
@@ -795,10 +830,20 @@ section.contact .item{
   margin-bottom: 20px;
 }
 
-section.contact .item p{
+section.contact .item a{
   font-size: 1.4em;
   color: white;
+  text-decoration: none;
+  font-family: "Aeonik Light";
+  transition: 0.3s ease;
 }
+
+section.contact .item:hover a{
+  color: #ababab;
+  box-shadow: 0 1px 0 0 currentcolor;
+  transition: 0.3s ease;
+}
+
 
 section.contact .item img{
   height: 30px;
@@ -862,6 +907,12 @@ Media Queries
 button.burgermenu {
   display: flex;
 }
+section.work .drag-circle {
+  left: 626px;
+}
+section.work .drag-arrow {
+  left: 696px;
+}
 }
 
 @media screen and (max-width:960px) {
@@ -899,6 +950,12 @@ section.experience .wrapper .item {
   }
 section.contact .wrapper .rhs{
   margin-top: 50px;
+}
+section.work .drag-circle {
+  display: none;
+}
+section.work .drag-arrow {
+  display: none;
 }
 }
 

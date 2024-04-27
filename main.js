@@ -122,6 +122,17 @@ carousel.addEventListener('mouseleave', () => {
     carousel.querySelectorAll('img').forEach(img => img.style.pointerEvents = 'auto');
   }
 });
+const sensitivity = 1.7; // Adjust this value to increase or decrease dragging power
+
+carousel.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const currentPosition = e.clientX;
+    currentTranslate = prevTranslate + (currentPosition - startPosition) * sensitivity;
+    carousel.style.transform = `translateX(${currentTranslate}px)`;
+  }
+});
+
+
 
 function animate() {
   carousel.style.transform = `translateX(${currentTranslate}px)`;
