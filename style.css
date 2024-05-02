@@ -533,6 +533,35 @@ section.work .scroll-container .carousel .card {
 
 section.work .scroll-container .carousel .card .text{
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+}
+
+section.work .scroll-container .carousel .card .text .rhs a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #323232;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+section.work .scroll-container .carousel .card .text .rhs a:hover{
+  transform: scale(1.15);
+  transition: 0.3s ease;
+}
+
+section.work .scroll-container .carousel .card .text .rhs a span{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 1.5px;
 }
 
 section.work .scroll-container .carousel .card img{
