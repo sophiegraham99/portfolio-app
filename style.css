@@ -415,6 +415,18 @@ Hero
 section.hero {
   padding: 180px 8% 100px;
   text-align: center;
+  position: relative;
+}
+
+section.hero .hero-circle{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 section.hero .mobile-hero{
@@ -746,7 +758,7 @@ section.skills .container .bento.resume{
   }
 
 section.skills .container .resume p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
     font-family: "Aeonik Light";
 margin-bottom: 30px;
@@ -777,7 +789,8 @@ section.skills .container .bento:hover .bento-overlay {
 section.skills .container .bento-overlay p {
   text-align: center;
   color: #989898;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.25em;
   padding: 0 8%;
 }
 
@@ -934,6 +947,11 @@ Media Queries
   }
 button.burgermenu {
   display: flex;
+}
+section.hero .hero-circle{
+  position: absolute;
+  width: 450px;
+  height: 450px;
 }
 section.work .drag-circle {
   left: 626px;
