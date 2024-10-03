@@ -65,7 +65,7 @@ p {
 
 h1 {
   font-family: var(--aeonik);
-  font-size: 11vw;
+  font-size: 10vw;
   font-weight: 700;
   color: #323232;
   text-transform: uppercase;
@@ -427,6 +427,7 @@ section.hero .hero-circle{
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: -1;
 }
 
 section.hero .mobile-hero{
