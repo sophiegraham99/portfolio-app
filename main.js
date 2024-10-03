@@ -29,6 +29,7 @@ window.onload = () => {
 /***************************************************
 Hero Flip Text Effect
 ***************************************************/
+/** 
 document.querySelectorAll('.flip-text').forEach(flipText => {
   const textContent = flipText.textContent.trim();
   flipText.textContent = '';
@@ -58,7 +59,7 @@ document.querySelectorAll('.flip-text').forEach(flipText => {
       letters[index].classList.remove('animating');
     }, 400);
   }
-});
+});**/
 
 
 /***************************************************
